@@ -12,6 +12,7 @@ import { CartService } from './services/cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { DataService } from './services/data.service';
 
 const appRoutes: Routes = [
       { path: '', component: ProductListComponent },
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     ShippingComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService]
+  providers: [CartService, DataService]
 })
 export class AppModule { }
 
